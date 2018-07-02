@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reddit Coding Challenges", "Reddit Coding Challenges\Reddit Coding Challenges.csproj", "{C696E5DC-1BDC-467C-8DDC-A2266DAEA477}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditDailyCoding", "Reddit Coding Challenges\RedditDailyCoding.csproj", "{C696E5DC-1BDC-467C-8DDC-A2266DAEA477}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditDailyCoding.Solutions", "RedditDailyCoding.Solutions\RedditDailyCoding.Solutions.csproj", "{87A721B3-01B4-49EC-AC9E-6EC58425A26B}"
 EndProject
