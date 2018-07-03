@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            RedditDailyCoding.Solutions.Day7.Medium.RecursiveDrawingProject.Run();
+            RedditDailyCoding.Solutions.Day8.Easy.NinetyNineBottles.Run();
         }
     }
 }
