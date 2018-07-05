@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 
 namespace RedditDailyCoding.Solutions.Day7.Easy
 {
@@ -11,6 +8,7 @@ namespace RedditDailyCoding.Solutions.Day7.Easy
         public MorseCodeTree dat = null;
         public MorseCodeTree dit = null;
 
+        // Constructor, takes in a flat tree string
         public MorseCodeTree(char[] value, int index)
         {
             val = value[index];
@@ -22,31 +20,33 @@ namespace RedditDailyCoding.Solutions.Day7.Easy
                 dit = new MorseCodeTree(value, index * 2 + 2);
         }
 
-        public char DatDit(char[] pat, int index)
+        public char treeCrawler(char[] morseString, int index)
         {
 
-            // End of the line "?"
+            // If we ever reach a ? node, we inputed some faulty morse code and return ? (no correct path goes through a ?, due to how morse is encoded)
             if (val == '?')
                 return '?';
 
-            if (index == pat.Length)
+            // If index is the size of the string, we've reached destination, and return val
+            if (index == morseString.Length)
                 return val;
 
-            if (pat[index] == '-')
+            // Check if current index of string is a dat or a dit, recursively crawls the tree
+            if (morseString[index] == '-')
             {
                 if (dat == null)
                     return '?';
-                return dat.DatDit(pat, index + 1);
+                return dat.treeCrawler(morseString, index + 1);
             }
 
-            if (pat[index] == '.')
+            if (morseString[index] == '.')
             {
                 if (dit == null)
                     return '?';
-                return dit.DatDit(pat, index + 1);
+                return dit.treeCrawler(morseString, index + 1);
             }
 
-            if (pat.Contains('/'))
+            if (morseString.Contains('/'))
                 return ' ';
 
             return '?';

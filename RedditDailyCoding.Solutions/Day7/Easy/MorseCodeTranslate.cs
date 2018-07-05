@@ -23,7 +23,7 @@ namespace RedditDailyCoding.Solutions.Day7.Easy
 
             for (int x = 0; x < words.Length; x++)
             {
-                decoded[x] = tree.DatDit(words[x].ToCharArray(), 0);
+                decoded[x] = tree.treeCrawler(words[x].ToCharArray(), 0);
                 Console.Write(decoded[x]);
             }
 
