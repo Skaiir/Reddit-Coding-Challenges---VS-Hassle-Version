@@ -7,8 +7,8 @@
     <ProjectGuid>{87A721B3-01B4-49EC-AC9E-6EC58425A26B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1</RootNamespace>
-    <AssemblyName>ClassLibrary1</AssemblyName>
+    <RootNamespace>RedditDailyCoding.Solutions</RootNamespace>
+    <AssemblyName>RedditDailyCoding.Solutions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -62,6 +62,7 @@
     </Compile>
     <Compile Include="Day7\Medium\recursiveDrawingProject.cs" />
     <Compile Include="Day8\Easy\NinetyNineBottles.cs" />
+    <Compile Include="Day8\Medium\intToSpelledNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
