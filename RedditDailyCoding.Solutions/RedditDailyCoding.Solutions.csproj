@@ -63,6 +63,7 @@
     <Compile Include="Day7\Medium\recursiveDrawingProject.cs" />
     <Compile Include="Day8\Easy\NinetyNineBottles.cs" />
     <Compile Include="Day8\Medium\intToSpelledNumber.cs" />
+    <Compile Include="Day9\Hard\SneakyPyramid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

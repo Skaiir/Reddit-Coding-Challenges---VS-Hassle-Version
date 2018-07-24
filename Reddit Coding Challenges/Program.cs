@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            RedditDailyCoding.Solutions.Day8.Medium.IntToSpelledNumber.Run();
+            RedditDailyCoding.Solutions.Day9.Hard.SneakyPyramid.Run();
         }
     }
 }
